@@ -1,6 +1,6 @@
 # nestjs-prisma7-postgresql-docker
 
-A professional example project demonstrating how to use **Prisma 7.2.0** (released just 3 weeks ago, after 6.9.1, with breaking changes) in a modern **NestJS** application with **TypeScript** and **PostgreSQL**—all running in Docker.
+A professional example project demonstrating how to use **Prisma 7.2.0** (released just 3 weeks ago, after 6.9.1, with breaking changes) in a modern **NestJS** application with **TypeScript** and **PostgreSQL**. All running in Docker.
 
 ## Story & Motivation
 
