@@ -1,20 +1,18 @@
+import { PrismaPg } from '@prisma/adapter-pg';
 import { Injectable, OnModuleDestroy } from '@nestjs/common';
 
 import { PrismaClient, Prisma } from '@/prisma/generated/client';
-import { SqlDriverAdapterFactory } from '@prisma/driver-adapter-utils'
 
 @Injectable()
 export class PrismaService implements OnModuleDestroy {
   public readonly client: PrismaClient;
 
   constructor() {
+    const adapter: PrismaPg = new PrismaPg({ connectionString: process.env.DATABASE_URL! })
     const options: Prisma.PrismaClientOptions = {
-      adapter: SqlDriverAdapterFactory.postgres({
-        url: process.env.DATABASE_URL!,
-      }),
-      errorFormat: 'pretty', // optional
+      adapter: adapter,
+      errorFormat: 'pretty',
     };
-
     this.client = new PrismaClient(options);
   }
 
