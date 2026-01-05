@@ -16,5 +16,6 @@ COPY . .
 
 RUN pnpm run build
 
-CMD ["node", "dist/src/main.js"]
+ENV MAIN_JS=dist/src/main.js
+CMD ["sh", "-c", "if [ -f $MAIN_JS ]; then node $MAIN_JS; else echo 'Error: $MAIN_JS not found.'; exit 1; fi"]
 # CMD ["tail", "-f", "/dev/null"]
