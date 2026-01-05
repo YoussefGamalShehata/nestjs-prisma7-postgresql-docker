@@ -1,4 +1,4 @@
 dist
-prisma/generated/
+prisma/generated
 node_modules
 tsconfig.tsbuildinfo
