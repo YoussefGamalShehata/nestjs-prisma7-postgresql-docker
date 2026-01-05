@@ -1,5 +1,6 @@
 services:
-    image: postgres:latest
+  postgres:
+    image: postgres:18.1
     environment:
       POSTGRES_USER: prisma
       POSTGRES_PASSWORD: prisma
