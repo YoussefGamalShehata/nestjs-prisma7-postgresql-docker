@@ -25,6 +25,19 @@ jobs:
           uname -a
           df -h
 
+      - name: Create .env file
+        run: |
+          cat <<EOF > .env
+          NODE_ENV=development
+          PORT=3000
+          POSTGRES_USER=prisma
+          POSTGRES_PASSWORD=prisma
+          POSTGRES_DB=prisma_db
+          POSTGRES_HOST=postgres
+          POSTGRES_PORT=5432
+          DATABASE_URL=postgresql://prisma:prisma@postgres:5432/prisma_db
+          EOF
+
       - name: Build and start services
         run: |
           set -Eeuo pipefail

@@ -1,5 +1,5 @@
 dist
 prisma/generated/
 node_modules
-# .env
+.env
 tsconfig.tsbuildinfo
