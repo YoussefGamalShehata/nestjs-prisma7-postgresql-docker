@@ -16,5 +16,5 @@ COPY . .
 
 RUN pnpm run build
 
-CMD ["node", "dist/main.js"]
+CMD ["node", "dist/src/main.js"]
 # CMD ["tail", "-f", "/dev/null"]
