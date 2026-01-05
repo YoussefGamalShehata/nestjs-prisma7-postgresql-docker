@@ -35,9 +35,9 @@ jobs:
       - name: Wait for API port to be open
         run: |
           set -Eeuo pipefail
-          echo "Waiting for API on port 4000..."
+          echo "Waiting for API on port 3000..."
           for i in {1..30}; do
-            if curl -sf http://localhost:4000/health > /dev/null; then
+            if curl -sf http://localhost:3000/health > /dev/null; then
               echo "API is ready."
               exit 0
             fi
@@ -57,9 +57,9 @@ jobs:
           echo "===== Checking /health ====="
           curl -v --connect-timeout 5 --max-time 10 \
             -w "\nHTTP_CODE=%{http_code}\nTOTAL_TIME=%{time_total}\n" \
-            http://localhost:4000/health || true
+            http://localhost:3000/health || true
 
-          code=$(curl -s -o /tmp/health.out -w "%{http_code}" http://localhost:4000/health || echo "000")
+          code=$(curl -s -o /tmp/health.out -w "%{http_code}" http://localhost:3000/health || echo "000")
 
           echo "/health HTTP: $code"
           echo "--- /health body ---"
@@ -80,9 +80,9 @@ jobs:
           echo "===== Checking /health/db ====="
           curl -v --connect-timeout 5 --max-time 10 \
             -w "\nHTTP_CODE=%{http_code}\nTOTAL_TIME=%{time_total}\n" \
-            http://localhost:4000/health/db || true
+            http://localhost:3000/health/db || true
 
-          code=$(curl -s -o /tmp/healthdb.out -w "%{http_code}" http://localhost:4000/health/db || echo "000")
+          code=$(curl -s -o /tmp/healthdb.out -w "%{http_code}" http://localhost:3000/health/db || echo "000")
 
           echo "/health/db HTTP: $code"
           echo "--- /health/db body ---"
