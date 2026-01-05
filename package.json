@@ -8,7 +8,7 @@
   "author": "Seyyed Ali Mohammadiyeh <maxbasecode@gmail.com>",
   "version": "1.0.0",
   "private": false,
-  "type": "commonjs",
+  "type": "module" 
   "scripts": {
     "build": "nest build",
     "start": "node dist/main.js",
