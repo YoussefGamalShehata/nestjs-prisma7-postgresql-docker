@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 
-import { PrismaService } from './prisma/prisma.service.js';
+import { PrismaService } from './prisma/prisma.service';
 
 type HealthStatus = { status: 'ok' };
 type HealthError = { status: 'error'; error: string };
