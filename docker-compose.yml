@@ -13,11 +13,12 @@ services:
     depends_on:
       - postgres
     environment:
-      DATABASE_URL: postgresql://prisma:prisma@postgres:5433/prisma_db
+      DATABASE_URL: postgresql://prisma:prisma@postgres:5432/prisma_db
+      PORT: 3000
     ports:
       - "4000:3000"
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:4000/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
       interval: 10s
       timeout: 3s
       retries: 5

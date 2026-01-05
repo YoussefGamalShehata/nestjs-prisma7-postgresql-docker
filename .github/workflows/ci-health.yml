@@ -37,16 +37,15 @@ jobs:
           set -Eeuo pipefail
           echo "Waiting for API on port 4000..."
           for i in {1..30}; do
-            if nc -z localhost 4000; then
-              echo "API port is open."
+            if curl -sf http://localhost:4000/health > /dev/null; then
+              echo "API is ready."
               exit 0
             fi
-            echo "[$i/30] API not ready yet..."
+            echo "[$i/30] API not ready..."
             sleep 2
           done
 
-          echo "API port did not open in time."
-          docker ps
+          echo "API did not become ready in time"
           docker compose logs
           exit 1
 
