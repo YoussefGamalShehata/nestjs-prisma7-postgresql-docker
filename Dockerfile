@@ -2,6 +2,9 @@ FROM node:24-alpine
 
 WORKDIR /app
 
+RUN apk update
+RUN apk add nano wget curl
+
 RUN npm install -g pnpm
 
 COPY package*.json ./
