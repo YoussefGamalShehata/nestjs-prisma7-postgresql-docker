@@ -1,6 +1,6 @@
 import { Get } from '@nestjs/common';
 
-import { PrismaService } from './prisma/prisma.service';
+import { PrismaService } from './prisma/prisma.service.js';
 
 type HealthStatus = { status: 'ok' };
 type HealthError = { status: 'error'; error: string };
